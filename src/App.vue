@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    卡卡
     <router-view/>
   </div>
 </template>
