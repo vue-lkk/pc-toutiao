@@ -7,12 +7,24 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2587226_y7ui9szdcf.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- element ui的css 样式资源 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.2/lib/theme-chalk/index.css">
+    <!-- 
+      element ui 依赖 Vue ，所以这里必须把vue给引入进来 
+      注意 vue 必须在 element ui 之前
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+    <!-- element ui 脚本资源 -->
+    <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.2/lib/index.js"></script>
+    <!-- echarts 脚本资源-->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.1/dist/echarts.min.js"></script>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+
     <!-- built files will be auto injected -->
   </body>
 </html>
